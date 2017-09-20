@@ -1,6 +1,6 @@
-import React from 'react';
-import { configure, addDecorator } from '@storybook/react';
-import { setDefaults } from '@storybook/addon-info';
+import React from 'react'
+import { configure, addDecorator } from '@storybook/react'
+import { setDefaults } from '@storybook/addon-info'
 
 addDecorator((story) => (
   <div
@@ -10,7 +10,7 @@ addDecorator((story) => (
   >
     {story()}
   </div>
-));
+))
 
 setDefaults({
   inline: true,
@@ -20,11 +20,11 @@ setDefaults({
   // maxPropObjectKeys: 10,
   // maxPropArrayLength: 10,
   // maxPropStringLength: 100,
-});
+})
 
 function loadStories () {
-  const req = require.context('../lib/components', true, /(\.story\.js$)|(\.story\.jsx$)/);
-  req.keys().forEach((filename) => req(filename));
+  const req = require.context('../lib/components', true, /(\.story\.js$)|(\.story\.jsx$)/)
+  req.keys().forEach((filename) => req(filename))
 }
 
-configure(loadStories, module);
+configure(loadStories, module)

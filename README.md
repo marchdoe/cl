@@ -20,19 +20,6 @@ This component lib is set up to use [emotion](https://github.com/emotion-js/emot
 
 ## Local Development
 
-### Linter
-_**NOTE:** The linter will run against everything in the `lib` directory. I've added an initial `.eslintrc` file for some basic configuration. Feel free to edit or replace it as needed._
-
-Run once:
-```
-$ npm run lint
-```
-
-Run the watch script:
-```
-$ npm run lint:watch
-```
-
 ### Tests
 _**NOTE:** As there are no components added by default, there are no tests. But the infrastructure is set up for you to run your tests. This app is setup to use Mocha, Enzyme, and Expect. The `test` script is looking for test files with a `.spec.js` extension, e.g. MyComponent.spec.js._
 Run once:

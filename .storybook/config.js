@@ -1,5 +1,6 @@
 import React from 'react'
 import { configure, addDecorator } from '@storybook/react'
+import { setOptions } from '@storybook/addon-options'
 import { setDefaults } from '@storybook/addon-info'
 
 addDecorator((story) => (
@@ -15,11 +16,18 @@ addDecorator((story) => (
 setDefaults({
   inline: true,
   header: false
-  // other defaults that can be set
-  // maxPropsIntoLine: 1,
-  // maxPropObjectKeys: 10,
-  // maxPropArrayLength: 10,
-  // maxPropStringLength: 100,
+})
+
+setOptions({
+  name: 'CL',
+  url: '#',
+  goFullScreen: false,
+  showLeftPanel: true,
+  showDownPanel: true,
+  showSearchBox: false,
+  downPanelInRight: true,
+  sortStoriesByKind: false,
+  hierarchySeparator: /\/|\./
 })
 
 function loadStories () {

@@ -59,12 +59,6 @@
     react-inspector "^2.1.1"
     uuid "^3.1.0"
 
-"@storybook/addon-centered@^3.2.6":
-  version "3.2.7"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-centered/-/addon-centered-3.2.7.tgz#ef32cdcaffc0329acd7684e85ed6983334ae515a"
-  dependencies:
-    global "^4.3.2"
-
 "@storybook/addon-events@^3.2.6":
   version "3.2.6"
   resolved "https://registry.yarnpkg.com/@storybook/addon-events/-/addon-events-3.2.6.tgz#b7fd0bae6b681b185f54ed78145699f94fd71e2b"
@@ -112,31 +106,11 @@
   dependencies:
     "@storybook/addons" "^3.2.6"
 
-"@storybook/addon-notes@^3.2.6":
-  version "3.2.7"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-notes/-/addon-notes-3.2.7.tgz#b334394f137b1c95d72a164d73b35dc832fecac8"
-  dependencies:
-    "@storybook/addons" "^3.2.6"
-    babel-runtime "^6.23.0"
-    prop-types "^15.5.10"
-    util-deprecate "^1.0.2"
-  optionalDependencies:
-    "@types/react" "^15.0.24"
-
 "@storybook/addon-options@^3.2.6":
   version "3.2.6"
   resolved "https://registry.yarnpkg.com/@storybook/addon-options/-/addon-options-3.2.6.tgz#8fbcd7858ff4ab8a047ce0ac6e275b866d1bef84"
   dependencies:
     "@storybook/addons" "^3.2.6"
-
-"@storybook/addon-storyshots@^3.2.6":
-  version "3.2.8"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-storyshots/-/addon-storyshots-3.2.8.tgz#f6e9aa6c99a9f437042da49123c0dc75fe51b90f"
-  dependencies:
-    babel-runtime "^6.23.0"
-    global "^4.3.2"
-    prop-types "^15.5.10"
-    read-pkg-up "^2.0.0"
 
 "@storybook/addons@^3.2.6":
   version "3.2.6"
@@ -256,10 +230,6 @@
 "@types/react@>=15":
   version "16.0.5"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.5.tgz#d713cf67cc211dea20463d2a0b66005c22070c4b"
-
-"@types/react@^15.0.24":
-  version "15.6.2"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-15.6.2.tgz#2c8495aa853cb37591d0046e9afe544fb837c612"
 
 abbrev@1:
   version "1.1.0"
@@ -5227,6 +5197,10 @@ performance-now@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-0.2.0.tgz#33ef30c5c77d4ea21c5a53869d91b56d8f2555e5"
 
+performance-now@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
+
 pify@^2.0.0, pify@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/pify/-/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
@@ -5739,6 +5713,12 @@ radium@^0.19.0:
     inline-style-prefixer "^2.0.5"
     prop-types "^15.5.8"
 
+raf@^3.1.0:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/raf/-/raf-3.3.2.tgz#0c13be0b5b49b46f76d6669248d527cf2b02fe27"
+  dependencies:
+    performance-now "^2.1.0"
+
 randomatic@^1.1.3:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/randomatic/-/randomatic-1.1.7.tgz#c7abe9cc8b87c0baa876b19fde83fd464797e38c"
@@ -5877,6 +5857,14 @@ react-modal@^2.2.4:
     exenv "^1.2.0"
     prop-types "^15.5.10"
     react-dom-factories "^1.0.0"
+
+react-motion@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/react-motion/-/react-motion-0.5.1.tgz#b90631408175ab1668e173caccd66d41a44f4592"
+  dependencies:
+    performance-now "^0.2.0"
+    prop-types "^15.5.8"
+    raf "^3.1.0"
 
 react-onclickoutside@^5.9.0:
   version "5.11.1"

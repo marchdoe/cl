@@ -4,7 +4,7 @@
 `$ npm install` or `$ yarn`
 
 ## Overview
-This component lib is set up to use [styled-components](https://github.com/styled-components/styled-components) and [polished](https://github.com/styled-components/polished) 💅. This is a starter for you to create your own components and easily publish them to npm.
+This component lib is set up to use [emotion](https://github.com/emotion-js/emotion/) and [polished](https://github.com/styled-components/polished) 💅. This is a starter for you to create your own components and easily publish them to npm.
 
 ### File Structure
 
@@ -16,7 +16,7 @@ This component lib is set up to use [styled-components](https://github.com/style
 `lib/components` is intended to contain combinations of these elements, e.g. SearchField, DropDown, etc.
 
 ##### STYLES
-`lib/styles` is inteded to contain your global styles that you would like to include throughout the application, e.g. colors, animations, themes, etc.
+`lib/styles` is intended to contain your global styles that you would like to include throughout the application, e.g. colors, animations, themes, etc.
 
 ## Local Development
 

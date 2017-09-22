@@ -8,15 +8,7 @@ This component lib is set up to use [emotion](https://github.com/emotion-js/emot
 
 ### File Structure
 
-##### ELEMENTS
-`lib/elements` is intended to contain your smallest reusable components, e.g. Buttons, Inputs, etc.
-
-
-##### COMPONENTS
-`lib/components` is intended to contain combinations of these elements, e.g. SearchField, DropDown, etc.
-
-##### STYLES
-`lib/styles` is intended to contain your global styles that you would like to include throughout the application, e.g. colors, animations, themes, etc.
+Add in atomic design principles here
 
 ## Local Development
 

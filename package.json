@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "CL",
   "version": "0.1.0",
   "description": "",
   "main": "build/index.js",
@@ -13,7 +13,7 @@
     "build:watch": "babel lib -w -d build",
     "build-storybook": "build-storybook",
     "storybook": "start-storybook -p 6006",
-    "test": "nyc ava",
+    "test": "ava",
     "watch:test": "ava --watch"
   },
   "author": "",
@@ -37,7 +37,6 @@
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
     "emotion": "^7.3.2",
-    "nyc": "^11.1.0",
     "polished": "^1.7.0",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",

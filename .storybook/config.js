@@ -27,6 +27,7 @@ setOptions({
   showSearchBox: false,
   downPanelInRight: true,
   sortStoriesByKind: false,
+  sidebarAnimations: false,
   hierarchySeparator: /\/|\./
 })
 

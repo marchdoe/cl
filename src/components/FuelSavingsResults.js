@@ -10,7 +10,7 @@ const FuelSavingsResults = ({savings}) => {
   // console.log(savings);
   // console.log("typeof", typeof(savings.monthly));
   const savingsExist = NumberFormatter.scrubFormatting(savings.monthly) > 0
-  const savingsClass = savingsExist ? 'savings' : 'loss'
+  // const savingsClass = savingsExist ? 'savings' : 'loss'
   const resultLabel = savingsExist ? 'Savings' : 'Loss'
 
   // You can even exclude the return statement below if the entire component is
@@ -20,7 +20,7 @@ const FuelSavingsResults = ({savings}) => {
     <table>
       <tbody>
         <tr>
-          <td className='fuel-savings-label'>{resultLabel}</td>
+          <td>{resultLabel}</td>
           <td>
             <table>
               <tbody>
@@ -30,9 +30,9 @@ const FuelSavingsResults = ({savings}) => {
                   <td>3 Year</td>
                 </tr>
                 <tr>
-                  <td className={savingsClass}>{savings.monthly}</td>
-                  <td className={savingsClass}>{savings.annual}</td>
-                  <td className={savingsClass}>{savings.threeYear}</td>
+                  <td>{savings.monthly}</td>
+                  <td>{savings.annual}</td>
+                  <td>{savings.threeYear}</td>
                 </tr>
               </tbody>
             </table>
@@ -43,8 +43,6 @@ const FuelSavingsResults = ({savings}) => {
   )
 }
 
-// Note that this odd style is utilized for propType validation for now. Must be defined *after*
-// the component is defined, which is why it's separate and down here.
 FuelSavingsResults.propTypes = {
   savings: PropTypes.object.isRequired
 }

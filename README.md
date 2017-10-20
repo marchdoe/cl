@@ -1,10 +1,13 @@
 # Example Component Library
 
-## Up & Running
+## Up & Running Docs
 `$ npm install` or `$ yarn`
 
-## Overview
-This component lib is set up to use [emotion](https://github.com/emotion-js/emotion/) and [polished](https://github.com/styled-components/polished) 💅. This is a starter for you to create your own components and easily publish them to npm.
+## Up & Running storybook
+`$ yarn run storybook`
+
+<!-- ## Overview
+This component lib is set up to use [styled-components]("") and [polished](https://github.com/styled-components/polished) 💅. This is a starter for you to create your own components and easily publish them to npm.
 
 ### File Structure
 
@@ -58,4 +61,4 @@ $ npm publish
 ```
 
 ## Contributing
-If you'd like to contribute to this app, please raise an issue and/or submit a pull request. Please be sure to follow the [Code of Conduct](CODE_OF_CONDUCT.md) when contributing.
+If you'd like to contribute to this app, please raise an issue and/or submit a pull request. Please be sure to follow the [Code of Conduct](CODE_OF_CONDUCT.md) when contributing. -->

@@ -17,12 +17,3 @@ stories.add('with a button',
     </Button>
   )
 ))
-
-// Knobs as dynamic variables.
-stories.add('as dynamic variables', () => {
-  const buttonText = text('Purchase', 'Purchase')
-  const count = number('Count', 3)
-
-  const content = `${buttonText} ${count}`
-  return (<Button>{content}</Button>)
-})

@@ -1,17 +1,34 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { injectGlobal } from 'styled-components'
 
-import { Button } from 'cl'
+import Colors from './Colors'
+
+injectGlobal`
+  html {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: white;
+  }
+`
+
+const Wrapper = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+`
+
 
 const App = props => {
   return (
-    <div>
+    <Wrapper>
       <h1>Todo</h1>
 
       <h2>Organization</h2>
 
       <h3>Atoms</h3>
-      <Button>Hello World</Button>
+      <h4>Colors</h4>
+      <Colors />
       <hr />
 
       <h3>Molecules</h3>
@@ -92,7 +109,7 @@ const App = props => {
 
       ### Tooling
       - [ ] Hook up some flavor of CI
-    </div>
+    </Wrapper>
   )
 }
 

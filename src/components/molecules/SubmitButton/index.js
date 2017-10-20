@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import styled from 'react-emotion'
+import styled from 'styled-components'
 import { Motion, spring } from 'react-motion'
 
-import Button from '../Button'
+import { Button } from 'cl'
 
 const Demo0 = styled.div`
   border-radius: 4px;

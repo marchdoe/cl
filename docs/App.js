@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { Button } from 'cl'
+
 const App = props => {
   return (
     <div>
@@ -9,6 +11,7 @@ const App = props => {
       <h2>Organization</h2>
 
       <h3>Atoms</h3>
+      <Button>Hello World</Button>
       <hr />
 
       <h3>Molecules</h3>
@@ -22,7 +25,6 @@ const App = props => {
 
       <h3>Pages</h3>
       <hr />
-
 
       <h2>Components to build</h2>
       - [ ] Button

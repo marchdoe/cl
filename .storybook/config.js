@@ -22,17 +22,17 @@ setOptions({
   name: 'CL',
   url: '#',
   goFullScreen: false,
-  showLeftPanel: true,
-  showDownPanel: true,
+  showStoriesPanel: true,
+  showAddonPanel: true,
   showSearchBox: false,
-  downPanelInRight: true,
+  addonPanelInRight: true,
   sortStoriesByKind: false,
   sidebarAnimations: false,
   hierarchySeparator: /\/|\./
 })
 
 function loadStories () {
-  const req = require.context('../lib/components', true, /(\.story\.js$)|(\.story\.jsx$)/)
+  const req = require.context('../src/components', true, /(\.story\.js$)|(\.story\.jsx$)/)
   req.keys().forEach((filename) => req(filename))
 }
 

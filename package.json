@@ -8,9 +8,11 @@
     "test": "test"
   },
   "scripts": {
-    "prepublish": "npm run build",
-    "build": "babel lib -d build",
-    "build:watch": "babel lib -w -d build",
+    "start": "webpack-dev-server",
+    "docs": "NODE_ENV=production webpack -p",
+    "build": "babel src -d build",
+    "clean": "rm -rf build",
+    "build": "yarn run clean && yarn run build",
     "build-storybook": "build-storybook",
     "storybook": "start-storybook -p 6006",
     "test": "ava",
@@ -32,35 +34,33 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.0",
+    "babel-loader": "^7.1.1",
     "babel-plugin-transform-react-constant-elements": "^6.23.0",
     "babel-preset-env": "^1.5.2",
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
-    "emotion": "^7.3.2",
     "enzyme": "^3.1.0",
     "enzyme-adapter-react-15": "^1.0.1",
+    "html-webpack-plugin": "^2.29.0",
     "polished": "^1.7.0",
     "prop-types": "^15.6.0",
+    "raw-loader": "^0.5.1",
     "react": "^15.6.2",
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^15.6.2",
     "react-motion": "^0.5.1",
     "react-test-renderer": "^15.6.1",
     "standard": "^10.0.3",
-    "standard-loader": "^6.0.1"
+    "standard-loader": "^6.0.1",
+    "styled-components": "^2.2.1",
+    "webpack": "^3.2.0",
+    "webpack-dev-server": "^2.5.1"
   },
   "ava": {
     "require": [
       "babel-register"
     ],
     "babel": "inherit"
-  },
-  "nyc": {
-    "exclude": [
-      "test",
-      "docs",
-      "stories"
-    ]
   },
   "standard": {
     "parser": "babel-eslint"

@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import styled from 'react-emotion'
+import styled from 'styled-components'
 import {
   border,
-  color } from '../../theme'
+  color } from '../../../theme'
 
 const StyledButton = styled.button`
   display: inline-flex;

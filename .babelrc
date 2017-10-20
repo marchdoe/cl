@@ -1,7 +1,6 @@
 {
   "presets": [ "env", "react", "stage-0" ],
   "plugins": [
-    "emotion",
     "transform-react-constant-elements"
   ]
 }

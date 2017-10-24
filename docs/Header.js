@@ -11,7 +11,7 @@ const StyledHeader = styled.footer`
 const Header = props => {
   return (
     <StyledHeader>
-      component Library Starter Kit
+      Component Library Starter Kit
     </StyledHeader>
   )
 }

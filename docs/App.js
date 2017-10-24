@@ -2,6 +2,7 @@ import React from 'react'
 import styled, { injectGlobal } from 'styled-components'
 
 import Header from './Header'
+import Nav from './Nav'
 import Colors from './Colors'
 import Footer from './Footer'
 
@@ -22,28 +23,6 @@ const Wrapper = styled.div`
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-`
-
-const Nav = styled.nav`
-  background-color: #ccc;
-  width: 60px;
-  text-align: center;
-  padding: .5rem;
-`
-
-const NavLink = styled.a`
-  text-align: center;
-  width: 40px;
-  height: 40px;
-  margin-bottom: 1rem;
-  background-color: #aaa;
-  border: 1px solid #aaa;
-  border-radius: 3px;
-  display: inline-block;
-  line-height: 2.4;
-  text-decoration: none;
-
-  color: #fff;
 `
 
 const Main = styled.main`
@@ -71,11 +50,7 @@ const App = props => {
       <Header />
 
       <Main>
-        <Nav>
-          <NavLink href='#'>C</NavLink>
-          <NavLink href='#'>T</NavLink>
-          <NavLink href='#'>S</NavLink>
-        </Nav>
+        <Nav />
 
         <Aside>
           <h1>Colors</h1>

@@ -1,7 +1,9 @@
 import React from 'react'
 import styled, { injectGlobal } from 'styled-components'
 
+import Header from './Header'
 import Colors from './Colors'
+import Footer from './Footer'
 
 injectGlobal`
   *  {
@@ -18,41 +20,32 @@ injectGlobal`
 
 const Wrapper = styled.div`
   display: flex;
-  flex-flow: row wrap;
-`
-
-const Header = styled.header`
-  background: tomato;
+  min-height: 100vh;
+  flex-direction: column;
 `
 
 const Main = styled.main`
   color: #fff;
   background-color: #333;
-  padding: 2rem;
+  flex: 1;
+  display: flex;
 `
 
 const Aside = styled.aside`
   background-color: white;
-  padding: 2rem;
-  max-width: 300px;
+  color: black;
+  padding: 2rem 1rem;
+  min-width: 250px;
 `
 
 const Article = styled.article`
-
+  padding: 1rem 2rem;
 `
-
-const Footer = styled.footer`
-  background: lightgreen;
-`
-
-
 
 const App = props => {
   return (
     <Wrapper>
-      <Header>
-        Header
-      </Header>
+      <Header />
 
       <Main>
         <Aside>
@@ -151,9 +144,7 @@ const App = props => {
       </Main>
 
       {/* <aside class="aside aside-2">Aside 2</aside> */}
-      <Footer>
-        Footer
-      </Footer>
+      <Footer />
     </Wrapper>
   )
 }

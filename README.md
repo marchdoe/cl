@@ -1,10 +1,17 @@
 # Example Component Library
 
-## Up & Running Docs
-`$ npm install` or `$ yarn`
+Get the docs up and running
+```
+$ cd docs
+$ yarn
+$ yarn start
+```
 
-## Up & Running storybook
-`$ yarn run storybook`
+Get the Storybook up and running
+```
+$ yarn
+$ yarn run storybook
+```
 
 <!-- ## Overview
 This component lib is set up to use [styled-components]("") and [polished](https://github.com/styled-components/polished) 💅. This is a starter for you to create your own components and easily publish them to npm.

@@ -5,7 +5,10 @@ const StyledFooter = styled.footer`
   text-align: center;
   padding-left: 1rem;
   padding-right: 1rem;
-  background-color: pink;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  background-color: white;
+  border-top: 1px solid #eee;
 `
 
 const Footer = props => {

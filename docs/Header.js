@@ -3,9 +3,9 @@ import styled from 'styled-components'
 
 const StyledHeader = styled.footer`
   text-align: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  background-color: lightgreen;
+  padding: 1rem;
+  background-color: white;
+  border-bottom: 1px solid #eee;
 `
 
 const Header = props => {

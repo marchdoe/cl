@@ -24,9 +24,30 @@ const Wrapper = styled.div`
   flex-direction: column;
 `
 
-const Main = styled.main`
+const Nav = styled.nav`
+  background-color: #ccc;
+  width: 60px;
+  text-align: center;
+  padding: .5rem;
+`
+
+const NavLink = styled.a`
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1rem;
+  background-color: #aaa;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  display: inline-block;
+  line-height: 2.4;
+  text-decoration: none;
+
   color: #fff;
-  background-color: #333;
+`
+
+const Main = styled.main`
+  background-color: white;
   flex: 1;
   display: flex;
 `
@@ -34,8 +55,10 @@ const Main = styled.main`
 const Aside = styled.aside`
   background-color: white;
   color: black;
-  padding: 2rem 1rem;
+  padding: 1rem 2rem;
   min-width: 250px;
+
+  border-right: 1px solid #eee;
 `
 
 const Article = styled.article`
@@ -48,21 +71,22 @@ const App = props => {
       <Header />
 
       <Main>
+        <Nav>
+          <NavLink href='#'>C</NavLink>
+          <NavLink href='#'>T</NavLink>
+          <NavLink href='#'>S</NavLink>
+        </Nav>
+
         <Aside>
-          Aside 1
+          <h1>Colors</h1>
+          <p>Atom</p>
         </Aside>
 
         <Article>
-        <h1>Todo</h1>
+          <Colors />
+        </Article>
 
-        <h2>Organization</h2>
-
-        <h3>Atoms</h3>
-        <h4>Colors</h4>
-        <Colors />
-        <hr />
-
-        <h3>Molecules</h3>
+        {/* <h3>Molecules</h3>
         <hr />
 
         <h3>Organisms</h3>
@@ -74,7 +98,7 @@ const App = props => {
         <h3>Pages</h3>
         <hr />
 
-        <h2>Components to build</h2>
+        <h2>Components to build</h2> */}
         {/* - [ ] Button
         - [ ] ButtonOutline
         - [ ] ButtonCircle
@@ -140,7 +164,7 @@ const App = props => {
 
         ### Tooling
         - [ ] Hook up some flavor of CI */}
-        </Article>
+
       </Main>
 
       {/* <aside class="aside aside-2">Aside 2</aside> */}

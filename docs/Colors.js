@@ -2,6 +2,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import ThemeColor from './ThemeColor'
+import GrayscaleColor from './GrayscaleColor'
+
 const Wrapper = styled.div`
   div {
     display: flex;
@@ -11,36 +14,26 @@ const Wrapper = styled.div`
   }
 `
 
-const Color = styled.div`
-  width: 110px;
-  height: 110px;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  display: block;
-  background-color: gray;
-  border-radius: 3px;
-`
-
 const Colors = props => {
   return (
     <Wrapper>
       <h2>Colors</h2>
       <div>
         <p>Theme Colors</p>
-        <Color />
-        <Color />
-        <Color />
-        <Color />
-        <Color />
+        <ThemeColor />
+        <ThemeColor />
+        <ThemeColor />
+        <ThemeColor />
+        <ThemeColor />
       </div>
 
       <div>
         <p>Grayscale</p>
-        <Color />
-        <Color />
-        <Color />
-        <Color />
-        <Color />
+        <GrayscaleColor className='first' />
+        <GrayscaleColor />
+        <GrayscaleColor />
+        <GrayscaleColor />
+        <GrayscaleColor className='last' />
       </div>
     </Wrapper>
   )

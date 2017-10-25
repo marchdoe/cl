@@ -24,6 +24,7 @@ const Color = styled.div`
 const Colors = props => {
   return (
     <Wrapper>
+      <h2>Colors</h2>
       <div>
         <p>Theme Colors</p>
         <Color />

@@ -26,9 +26,11 @@ const StyledNavLink = styled.a`
 const Nav = props => {
   return (
     <StyledNav>
-      <StyledNavLink href='#'>C</StyledNavLink>
+      <StyledNavLink href='#'>A</StyledNavLink>
+      <StyledNavLink href='#'>M</StyledNavLink>
+      <StyledNavLink href='#'>O</StyledNavLink>
       <StyledNavLink href='#'>T</StyledNavLink>
-      <StyledNavLink href='#'>S</StyledNavLink>
+      <StyledNavLink href='#'>P</StyledNavLink>
     </StyledNav>
   )
 }

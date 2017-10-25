@@ -53,8 +53,10 @@ const App = props => {
         <Nav />
 
         <Aside>
-          <h1>Colors</h1>
-          <p>Atom</p>
+          <h1>Atoms</h1>
+          <p>Colors</p>
+          <p>Typography</p>
+          <p>Layout</p>
         </Aside>
 
         <Article>

@@ -15,8 +15,8 @@
     "dist": "yarn run clean && yarn run build",
     "build-storybook": "build-storybook",
     "storybook": "start-storybook -p 6006",
-    "test": "ava",
-    "watch:test": "ava --watch"
+    "test": "jest",
+    "watch:test": "jest --watch"
   },
   "author": "",
   "license": "MIT",
@@ -30,7 +30,6 @@
     "@storybook/addons": "3.3.0-alpha.2",
     "@storybook/components": "3.3.0-alpha.2",
     "@storybook/react": "3.3.0-alpha.2",
-    "ava": "^0.22.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.0",
@@ -41,7 +40,10 @@
     "babel-register": "^6.26.0",
     "enzyme": "^3.1.0",
     "enzyme-adapter-react-15": "^1.0.1",
+    "enzyme-adapter-react-16": "^1.0.2",
     "html-webpack-plugin": "^2.29.0",
+    "jest": "^21.2.1",
+    "jest-styled-components": "^4.9.0",
     "polished": "^1.7.0",
     "prop-types": "^15.6.0",
     "raw-loader": "^0.5.1",
@@ -49,18 +51,12 @@
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.0.0",
     "react-motion": "^0.5.1",
-    "react-test-renderer": "^15.6.1",
+    "react-test-renderer": "^16.0.0",
     "standard": "^10.0.3",
     "standard-loader": "^6.0.1",
     "styled-components": "^2.2.1",
     "webpack": "^3.2.0",
     "webpack-dev-server": "^2.5.1"
-  },
-  "ava": {
-    "require": [
-      "babel-register"
-    ],
-    "babel": "inherit"
   },
   "standard": {
     "parser": "babel-eslint"

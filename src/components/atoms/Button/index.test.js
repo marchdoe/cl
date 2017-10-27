@@ -1,17 +1,11 @@
 import React from 'react'
-import test from 'ava'
-import Enzyme, { shallow } from 'enzyme'
-import Adapter from 'enzyme-adapter-react-15'
+import renderer from 'react-test-renderer'
+import 'jest-styled-components'
 
 import Button from '.'
 
-Enzyme.configure({ adapter: new Adapter() })
-
-test('renders children when passed in', t => {
-  const wrapper = shallow(
-    <Button>
-      Hello World
-    </Button>
-  )
-  t.true(wrapper.contains('Hello World'))
+test('it works', () => {
+  const tree = renderer.create(<Button>Hello World</Button>).toJSON()
+  expect(tree).toMatchSnapshot()
+  expect(tree).toHaveStyleRule('font-size', '16px')
 })

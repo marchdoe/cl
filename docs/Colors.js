@@ -3,8 +3,10 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { color } from './Theme'
+
 import ThemeColor from './ThemeColor'
 import GrayscaleColor from './GrayscaleColor'
+import AlertColor from './AlertColor'
 
 const Wrapper = styled.div`
   div {
@@ -31,7 +33,16 @@ const Colors = props => {
         <GrayscaleColor type='gray1' />
         <GrayscaleColor type='gray2' />
         <GrayscaleColor type='gray3' />
-        <GrayscaleColor type='gray4' className='last' />
+        <GrayscaleColor type='gray4' />
+        <GrayscaleColor type='gray5' className='last' />
+      </div>
+
+      <div>
+        <p>Alert Colors</p>
+        <AlertColor type='primary' />
+        <AlertColor type='secondary' />
+        <AlertColor type='secondary' />
+        <AlertColor type='secondary' />
       </div>
     </Wrapper>
   )

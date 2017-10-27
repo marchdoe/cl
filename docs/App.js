@@ -1,11 +1,18 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled, { injectGlobal, ThemeProvider } from 'styled-components'
+import theme from 'styled-theming'
 
-import theme from './Theme'
+import { color } from './Theme'
+
 import Header from './Header'
 import Nav from './Nav'
+import Aside from './Aside'
+import Main from './Main'
+import Article from './Article'
 import Colors from './Colors'
 import Footer from './Footer'
+
 
 injectGlobal`
   * {
@@ -26,27 +33,9 @@ const Wrapper = styled.div`
   flex-direction: column;
 `
 
-const Main = styled.main`
-  background-color: white;
-  flex: 1;
-  display: flex;
-`
-
-const Aside = styled.aside`
-  background-color: white;
-  color: black;
-  padding: 1rem 2rem;
-  min-width: 250px;
-  border-right: 1px solid #eee;
-`
-
-const Article = styled.article`
-  padding: 1rem 2rem;
-`
-
 const App = props => {
   return (
-    <ThemeProvider theme={{ mode: 'light' }}>
+    <ThemeProvider theme={{ mode: 'dark' }}>
       <Wrapper>
         <Header />
 

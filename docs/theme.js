@@ -17,7 +17,8 @@ export const color = {
   gray7: '#7f8a93',
   gray8: '#5f6e78',
   gray9: '#374047',
-  black: '#000000'
+  black: '#000000',
+  lightblack: '#0d1321'
 }
 
 export const font = {

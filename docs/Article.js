@@ -17,7 +17,7 @@ const textColor = theme.variants('mode', 'color', {
 
 const Article = styled.aside`
   color: ${textColor};
-  padding: 1rem 2rem;
+  padding: 0 2rem;
   background-color: ${layoutColor};
 `
 

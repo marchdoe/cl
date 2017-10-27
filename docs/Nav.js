@@ -2,10 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledNav = styled.nav`
-  background-color: #ccc;
+  ${'' /* background-color: #ccc; */}
+  border-right: 1px solid #eee;
   width: 60px;
   text-align: center;
-  padding: 0.5rem;
+  padding: 1rem 0.5rem;
 `
 
 const StyledNavLink = styled.a`

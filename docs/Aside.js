@@ -17,8 +17,8 @@ const textColor = theme.variants('mode', 'color', {
 
 const Aside = styled.aside`
   color: ${textColor};
-  padding: 1rem 2rem;
-  min-width: 250px;
+  padding: 0 2rem;
+  min-width: 200px;
   border-right: 1px solid #eee;
   background-color: ${layoutColor};
 `

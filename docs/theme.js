@@ -4,8 +4,8 @@ export const border = {
 }
 
 export const color = {
-  blue: '#0088cc',
-  green: '#77c241',
+  primaryColor: '#0088cc',
+  secondaryColor: '#77c241',
   white: '#ffffff',
   gray0: '#f8f9f9',
   gray1: '#ebedee',
@@ -18,12 +18,16 @@ export const color = {
   gray8: '#5f6e78',
   gray9: '#374047',
   black: '#000000',
-  lightblack: '#0d1321'
+  lightBlack: '#0d1321',
+  success: "#7aed9f",
+  info: "#6990eb",
+  warning: "#eccc69",
+  danger: "#ff486c"
 }
 
 export const font = {
-  copy: '',
-  title: ''
+  primaryFont: '',
+  secondaryFont: ''
 }
 
 // export const size = {

@@ -6,8 +6,10 @@ import theme from 'styled-theming'
 import { color } from './Theme'
 
 const themeColor = theme.variants('mode', 'type', {
-  primary: { light: color.blue, dark: 'darkblue' },
-  secondary: { light: color.green, dark: 'darkgreen' }
+  success: { light: color.success, dark: color.success },
+  info: { light: color.info, dark: color.info },
+  warning: { light: color.warning, dark: color.warning },
+  danger: { light: color.danger, dark: color.danger }
 })
 
 const AlertColor = styled.div`
@@ -22,11 +24,11 @@ const AlertColor = styled.div`
 `
 
 AlertColor.propTypes = {
-  type: PropTypes.oneOf(['primary', 'secondary'])
+  type: PropTypes.oneOf(['success', 'info', 'warning', 'danger'])
 }
 
 AlertColor.defaultProps = {
-  type: 'primary',
+  type: 'success',
 }
 
 export default AlertColor

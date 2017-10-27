@@ -39,10 +39,10 @@ const Colors = props => {
 
       <div>
         <p>Alert Colors</p>
-        <AlertColor type='primary' />
-        <AlertColor type='secondary' />
-        <AlertColor type='secondary' />
-        <AlertColor type='secondary' />
+        <AlertColor type='success' />
+        <AlertColor type='info' />
+        <AlertColor type='warning' />
+        <AlertColor type='danger' />
       </div>
     </Wrapper>
   )

@@ -52,6 +52,7 @@
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.0.0",
     "react-motion": "^0.5.1",
+    "react-router-dom": "^4.2.2",
     "react-test-renderer": "^16.0.0",
     "standard": "^10.0.3",
     "standard-loader": "^6.0.1",

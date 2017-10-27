@@ -3,7 +3,7 @@ const webpack = require('webpack')
 
 module.exports = {
   devtool: 'cheap-eval-source-map',
-  entry: './docs/entry.js',
+  entry: './docs/Entry.js',
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js'

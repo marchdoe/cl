@@ -6,9 +6,8 @@ import theme from 'styled-theming'
 import { color } from './Theme'
 
 const themeColor = theme.variants('mode', 'type', {
-  default: { light: color.white, dark: color.black },
-  primary: { light: color.blue, dark: 'darkblue' },
-  secondary: { light: color.green, dark: 'darkgreen' }
+  primary: { light: color.primaryColor, dark: 'darkblue' },
+  secondary: { light: color.secondaryColor, dark: 'darkgreen' }
 })
 
 const ThemeColor = styled.div`
@@ -23,11 +22,11 @@ const ThemeColor = styled.div`
 `
 
 ThemeColor.propTypes = {
-  type: PropTypes.oneOf(['default', 'primary', 'secondary'])
+  type: PropTypes.oneOf(['primary', 'secondary'])
 }
 
 ThemeColor.defaultProps = {
-  type: 'default',
+  type: 'primary',
 }
 
 export default ThemeColor

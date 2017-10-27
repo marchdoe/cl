@@ -2,7 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 
 module.exports = {
-  entry: './entry.js',
+  entry: './Entry.js',
 
   output: {
     path: __dirname,

@@ -38,7 +38,7 @@ GrayscaleColor.propTypes = {
 }
 
 GrayscaleColor.defaultProps = {
-  type: 'default',
+  type: 'gray0',
 }
 
 export default GrayscaleColor

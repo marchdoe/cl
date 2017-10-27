@@ -1,6 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import theme from 'styled-theming'
+
+import { color } from './Theme'
+
+const themeColor = theme.variants('mode', 'type', {
+  default: { light: color.white, dark: color.black },
+  primary: { light: color.blue, dark: 'darkblue' },
+  secondary: { light: color.green, dark: 'darkgreen' }
+})
 
 const ThemeColor = styled.div`
   width: 110px;
@@ -10,14 +19,15 @@ const ThemeColor = styled.div`
   display: block;
   border-radius: 3px;
   border: 1px solid #ccc;
+  background-color: ${themeColor};
 `
 
 ThemeColor.propTypes = {
-  color: PropTypes.string
+  type: PropTypes.oneOf(['default', 'primary', 'secondary'])
 }
 
 ThemeColor.defaultProps = {
-  color: 'blue'
+  type: 'default',
 }
 
 export default ThemeColor

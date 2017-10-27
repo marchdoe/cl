@@ -21,20 +21,17 @@ const Colors = props => {
       <h2>Colors</h2>
       <div>
         <p>Theme Colors</p>
-        <ThemeColor />
-        <ThemeColor />
-        <ThemeColor />
-        <ThemeColor />
-        <ThemeColor />
+        <ThemeColor type='primary' />
+        <ThemeColor type='secondary' />
       </div>
 
       <div>
         <p>Grayscale</p>
-        <GrayscaleColor color={color.gray1} className='first' />
-        <GrayscaleColor color={color.gray2} />
-        <GrayscaleColor color={color.gray3} />
-        <GrayscaleColor color={color.gray4} />
-        <GrayscaleColor color={color.gray5} className='last' />
+        <GrayscaleColor type='gray0' className='first' />
+        <GrayscaleColor type='gray1' />
+        <GrayscaleColor type='gray2' />
+        <GrayscaleColor type='gray3' />
+        <GrayscaleColor type='gray4' className='last' />
       </div>
     </Wrapper>
   )

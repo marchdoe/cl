@@ -2,6 +2,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { color } from './Theme'
 import ThemeColor from './ThemeColor'
 import GrayscaleColor from './GrayscaleColor'
 
@@ -29,11 +30,11 @@ const Colors = props => {
 
       <div>
         <p>Grayscale</p>
-        <GrayscaleColor className='first' />
-        <GrayscaleColor />
-        <GrayscaleColor />
-        <GrayscaleColor />
-        <GrayscaleColor className='last' />
+        <GrayscaleColor color={color.gray1} className='first' />
+        <GrayscaleColor color={color.gray2} />
+        <GrayscaleColor color={color.gray3} />
+        <GrayscaleColor color={color.gray4} />
+        <GrayscaleColor color={color.gray5} className='last' />
       </div>
     </Wrapper>
   )

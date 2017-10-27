@@ -2,15 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
+import { color } from './Theme'
+
 const GrayscaleColor = styled.div`
   width: 125px;
   height: 40px;
   margin-bottom: 10px;
   display: block;
-
-  color: ${props => props.theme.blue};
-  border: 1px solid ${props => props.theme.blue};
-  background: ${props => props.theme.green};
+  border: 1px solid #ccc;
 
   &.first {
     border-top-left-radius: 10px;
@@ -28,7 +27,7 @@ GrayscaleColor.propTypes = {
 }
 
 GrayscaleColor.defaultProps = {
-  color: 'blue'
+  color: color.blue
 }
 
 export default GrayscaleColor

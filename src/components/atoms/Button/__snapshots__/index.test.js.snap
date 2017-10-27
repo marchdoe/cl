@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it works 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-family: 'helvetica';
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 16px;
+  border: 0.0625em solid #bec4c8;
+  height: 2.5em;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0 1em;
+  border-radius: 3px;
+  box-sizing: border-box;
+  -webkit-transition: background-color 250ms ease-out,color 250ms ease-out,border-color 250ms ease-out;
+  transition: background-color 250ms ease-out,color 250ms ease-out,border-color 250ms ease-out;
+  background-color: #ffffff;
+  color: #bec4c8;
+}
+
+.c0:hover,
+.c0:focus,
+.c0:active {
+  background-color: #f8f9f9;
+  border-color: #97a1a7;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+<button
+  className="c0"
+  onClick={undefined}
+  onMouseDown={undefined}
+  onTouchStart={undefined}
+>
+  Hello World
+</button>
+`;

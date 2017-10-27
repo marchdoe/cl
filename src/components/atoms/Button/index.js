@@ -34,7 +34,7 @@ const StyledButton = styled.button`
 
   &:focus {
     outline: none;
- }
+  }
 `
 
 const Button = ({ children, onClick, onMouseDown, onTouchStart }) => (

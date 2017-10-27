@@ -9,10 +9,7 @@ const ThemeColor = styled.div`
   margin-bottom: 10px;
   display: block;
   border-radius: 3px;
-
-  color: ${props => props.theme.blue};
-  border: 1px solid ${props => props.theme.blue};
-  background: ${props => props.theme.green};
+  border: 1px solid #ccc;
 `
 
 ThemeColor.propTypes = {

@@ -1,6 +1,7 @@
 {
   "presets": [ "env", "react", "stage-0" ],
   "plugins": [
-    "transform-react-constant-elements"
+    "transform-react-constant-elements",
+    "babel-plugin-styled-components"
   ]
 }

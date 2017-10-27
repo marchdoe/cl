@@ -5,7 +5,7 @@ const StyledNav = styled.nav`
   background-color: #ccc;
   width: 60px;
   text-align: center;
-  padding: .5rem;
+  padding: 0.5rem;
 `
 
 const StyledNavLink = styled.a`
@@ -19,7 +19,6 @@ const StyledNavLink = styled.a`
   display: inline-block;
   line-height: 2.4;
   text-decoration: none;
-
   color: #fff;
 `
 

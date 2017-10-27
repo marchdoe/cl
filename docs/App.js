@@ -8,8 +8,8 @@ import Colors from './Colors'
 import Footer from './Footer'
 
 injectGlobal`
-  *  {
-    box-sizing:border-box
+  * {
+    box-sizing: border-box;
   }
 
   body {
@@ -37,7 +37,6 @@ const Aside = styled.aside`
   color: black;
   padding: 1rem 2rem;
   min-width: 250px;
-
   border-right: 1px solid #eee;
 `
 

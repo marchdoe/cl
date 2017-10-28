@@ -6,9 +6,9 @@ import theme from 'styled-theming'
 import { color } from './Theme'
 
 import Header from './Header'
+import Main from './Main'
 import Nav from './Nav'
 import Aside from './Aside'
-import Main from './Main'
 import Article from './Article'
 import Colors from './Colors'
 import Footer from './Footer'
@@ -42,6 +42,8 @@ const App = props => {
         <Main>
           <Nav />
 
+          {/* {this.props.children} */}
+          {/* this should be populated by the nav item you choose */}
           <Aside>
             <h1>Atoms</h1>
             <p>Colors</p>
@@ -49,9 +51,11 @@ const App = props => {
             <p>Layout</p>
           </Aside>
 
+          {/* this should be populated by the secondary-nav item you choose */}
           <Article>
             <Colors />
           </Article>
+
         </Main>
 
         <Footer />

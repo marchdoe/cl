@@ -1,15 +1,22 @@
 import React from 'react'
+import { NavLink, Route, Switch } from 'react-router-dom'
 import styled from 'styled-components'
 
+import { color } from './Theme'
+
+import Home from './Home'
+import Atoms from './Atoms'
+import Molecules from './Molecules'
+import Organisms from './Organisms'
+
 const StyledNav = styled.nav`
-  ${'' /* background-color: #ccc; */}
   border-right: 1px solid #eee;
   width: 60px;
   text-align: center;
   padding: 1rem 0.5rem;
 `
 
-const StyledNavLink = styled.a`
+const StyledNavLink = styled(NavLink)`
   text-align: center;
   width: 40px;
   height: 40px;
@@ -21,16 +28,29 @@ const StyledNavLink = styled.a`
   line-height: 2.4;
   text-decoration: none;
   color: #fff;
+  transition: all 0.3s ease 0s;
+
+  &.is-selected {
+    background-color: ${color.primaryColor};
+    border: 1px solid ${color.primaryColor};
+  }
 `
 
 const Nav = props => {
   return (
     <StyledNav>
-      <StyledNavLink href='#'>A</StyledNavLink>
-      <StyledNavLink href='#'>M</StyledNavLink>
-      <StyledNavLink href='#'>O</StyledNavLink>
-      <StyledNavLink href='#'>T</StyledNavLink>
-      <StyledNavLink href='#'>P</StyledNavLink>
+      <StyledNavLink to='/atoms' activeClassName='is-selected'>A</StyledNavLink>
+      <StyledNavLink to='/molecules' activeClassName='is-selected'>M</StyledNavLink>
+      <StyledNavLink to='/organisms' activeClassName='is-selected'>O</StyledNavLink>
+      <StyledNavLink to='/templates' activeClassName='is-selected'>T</StyledNavLink>
+      <StyledNavLink to='/pages' activeClassName='is-selected'>P</StyledNavLink>
+
+      <Switch>
+        <Route path="/" component={Home}/>
+        <Route path="/atoms" component={Atoms}/>
+        <Route path="/molecules" component={Molecules}/>
+        <Route path="/organisms" component={Organisms}/>
+      </Switch>
     </StyledNav>
   )
 }

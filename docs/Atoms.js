@@ -1,40 +1,25 @@
 import React from 'react'
+import { NavLink, Route } from 'react-router-dom'
 
-// import Nav from './Nav'
-// import Aside from './Aside'
-// import Article from './Article'
-// import Colors from './Colors'
+import Aside from './Aside'
+import Colors from './Colors'
 
-const Atoms = props => {
+const Atoms = ({match}) => {
   return (
-    <div>
-      <ul>
-        <li><Link to={`${match.url}/colors`}>Colors</Link></li>
-        <li><Link to={`${match.url}/typeography`}>Typeography</Link></li>
-      </ul>
-      <Route path={`${match.path}/:name`} render= {({match}) =>(
+    [
+      <Aside key='aside'>
+        <h1>Atoms</h1>
+        <p><NavLink to={`${match.url}/colors`}>Colors</NavLink></p>
+        <p><NavLink to={`${match.url}/typeography`}>Typeography</NavLink></p>
+      </Aside>,
+
+      <Route  key='route' path={`${match.path}/:name`} render= {({match}) =>(
         <div>
-          <h3>{match.params.name}</h3>
+          <Colors />
         </div>
       )}/>
-    </div>
+    ]
   )
 }
 
 export default Atoms
-
-
-{/* <div>
-  <Nav />
-
-  <Aside>
-    <h1>Atoms</h1>
-    <p>Colors</p>
-    <p>Typography</p>
-    <p>Layout</p>
-  </Aside>
-
-  <Article>
-    <Colors />
-  </Article>
-</div> */}

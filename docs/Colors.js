@@ -34,7 +34,8 @@ const Colors = props => {
         <GrayscaleColor type='gray2' />
         <GrayscaleColor type='gray3' />
         <GrayscaleColor type='gray4' />
-        <GrayscaleColor type='gray5' className='last' />
+        <GrayscaleColor type='gray5' />
+        <GrayscaleColor type='gray6' className='last' />
       </div>
 
       <div>

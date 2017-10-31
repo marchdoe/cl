@@ -44,13 +44,6 @@ const Nav = props => {
       <StyledNavLink to='/organisms' activeClassName='is-selected'>O</StyledNavLink>
       <StyledNavLink to='/templates' activeClassName='is-selected'>T</StyledNavLink>
       <StyledNavLink to='/pages' activeClassName='is-selected'>P</StyledNavLink>
-
-      <Switch>
-        <Route path="/" component={Home}/>
-        <Route path="/atoms" component={Atoms}/>
-        <Route path="/molecules" component={Molecules}/>
-        <Route path="/organisms" component={Organisms}/>
-      </Switch>
     </StyledNav>
   )
 }

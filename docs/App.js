@@ -1,17 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import styled, { injectGlobal, ThemeProvider } from 'styled-components'
 import theme from 'styled-theming'
 
 import { color } from './Theme'
 
+import Home from './Home'
+import Atoms from './Atoms'
+import Molecules from './Molecules'
+import Organisms from './Organisms'
+import NotFound from './NotFound'
+
 import Header from './Header'
 import Main from './Main'
 import Nav from './Nav'
-import Aside from './Aside'
-import Article from './Article'
-import Colors from './Colors'
 import Footer from './Footer'
+
 
 
 injectGlobal`
@@ -35,31 +40,35 @@ const Wrapper = styled.div`
 
 const App = props => {
   return (
-    <ThemeProvider theme={{ mode: 'light' }}>
-      <Wrapper>
-        <Header />
+    <ThemeProvider theme={{ mode: 'dark' }}>
+      <BrowserRouter>
+        <Wrapper>
+          <Header />
 
-        <Main>
-          <Nav />
+          <Main>
+            <Nav />
 
-          {/* {this.props.children} */}
-          {/* this should be populated by the nav item you choose */}
-          <Aside>
-            <h1>Atoms</h1>
-            <p>Colors</p>
-            <p>Typography</p>
-            <p>Layout</p>
-          </Aside>
+            <Switch>
+              <Route exact path={"/"} component={Home}/>
+              <Route path="/atoms" component={Atoms}/>
+              <Route path="/molecules" component={Molecules}/>
+              <Route path="/organisms" component={Organisms}/>
+              <Route component={NotFound} />
+            </Switch>
 
-          {/* this should be populated by the secondary-nav item you choose */}
-          <Article>
-            <Colors />
-          </Article>
+            {/* this should be populated by the nav item you choose */}
 
-        </Main>
 
-        <Footer />
-      </Wrapper>
+            {/* this should be populated by the secondary-nav item you choose */}
+            {/* <Article>
+              <Colors />
+            </Article> */}
+
+          </Main>
+
+          <Footer />
+        </Wrapper>
+      </BrowserRouter>
     </ThemeProvider>
   )
 }

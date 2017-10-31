@@ -6,16 +6,17 @@ import theme from 'styled-theming'
 import { color } from './Theme'
 
 const themeColor = theme.variants('mode', 'type', {
-  gray0: { light: color.gray0, dark: color.gray5 },
-  gray1: { light: color.gray1, dark: color.gray4 },
-  gray2: { light: color.gray2, dark: color.gray3 },
-  gray3: { light: color.gray3, dark: color.gray2 },
-  gray4: { light: color.gray4, dark: color.gray1 },
-  gray5: { light: color.gray5, dark: color.gray0 }
+  gray0: { light: color.gray0, dark: color.gray0 },
+  gray1: { light: color.gray1, dark: color.gray1 },
+  gray2: { light: color.gray2, dark: color.gray2 },
+  gray3: { light: color.gray3, dark: color.gray3 },
+  gray4: { light: color.gray4, dark: color.gray4 },
+  gray5: { light: color.gray5, dark: color.gray5 },
+  gray6: { light: color.gray6, dark: color.gray6 }
 })
 
 const GrayscaleColor = styled.div`
-  width: 110px;
+  width: 80px;
   height: 40px;
   margin-bottom: 10px;
   display: block;
@@ -34,7 +35,7 @@ const GrayscaleColor = styled.div`
 `
 
 GrayscaleColor.propTypes = {
-  type: PropTypes.oneOf(['gray0', 'gray1', 'gray2', 'gray3', 'gray4', 'gray5'])
+  type: PropTypes.oneOf(['gray0', 'gray1', 'gray2', 'gray3', 'gray4', 'gray5', 'gray6'])
 }
 
 GrayscaleColor.defaultProps = {

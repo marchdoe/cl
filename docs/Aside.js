@@ -6,13 +6,13 @@ import theme from 'styled-theming'
 import { color } from './Theme'
 
 const layoutColor = theme.variants('mode', 'layout', {
-  primary: { light: color.white, dark: color.lightBlack },
-  secondary: { light: color.blue, dark: 'darkblue' }
+  primary: { light: color.white, dark: color.white },
+  secondary: { light: color.blue, dark: color.blue }
 })
 
 const textColor = theme.variants('mode', 'color', {
-  primary: { light: color.lightBlack, dark: color.white },
-  secondary: { light: color.blue, dark: 'darkblue' }
+  primary: { light: color.lightBlack, dark: color.lightBlack },
+  secondary: { light: color.blue, dark: color.blue }
 })
 
 const Aside = styled.aside`

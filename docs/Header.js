@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
-const StyledHeader = styled.footer`
+const StyledHeader = styled.header`
   padding: 1rem;
   background-color: white;
   border-bottom: 1px solid #eee;
@@ -10,7 +11,7 @@ const StyledHeader = styled.footer`
 const Header = props => {
   return (
     <StyledHeader>
-      Component Library Starter Kit
+      <Link to={'/'}>Component Library Starter Kit</Link>
     </StyledHeader>
   )
 }

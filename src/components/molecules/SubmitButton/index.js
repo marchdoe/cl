@@ -50,8 +50,6 @@ class SubmitButton extends Component {
 
           <Motion style={{x: spring(this.state.open ? 30 : 0)}}>
             {({x}) =>
-              // children is a callback which should accept the current value of
-              // `style`
               <Demo0>
                 <Demo0Block style={{
                   transform: `translate3d(${x}px, 0, 0)`

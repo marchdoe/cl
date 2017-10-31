@@ -38,7 +38,7 @@ const Wrapper = styled.div`
 
 const App = props => {
   return (
-    <ThemeProvider theme={{ mode: 'dark' }}>
+    <ThemeProvider theme={{ mode: 'light' }}>
       <BrowserRouter>
         <Wrapper>
           <Header />

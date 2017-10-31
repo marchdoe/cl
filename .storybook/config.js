@@ -2,15 +2,18 @@ import React from 'react'
 import { configure, addDecorator } from '@storybook/react'
 import { setOptions } from '@storybook/addon-options'
 import { setDefaults } from '@storybook/addon-info'
+import { ThemeProvider } from 'styled-components'
 
 addDecorator((story) => (
-  <div
-    style={{
-      padding: 20
-    }}
-  >
-    {story()}
-  </div>
+  <ThemeProvider theme={{ mode: 'light' }}>
+    <div
+      style={{
+        padding: 20
+      }}
+    >
+      {story()}
+    </div>
+  </ThemeProvider>
 ))
 
 setDefaults({

@@ -3,15 +3,12 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import theme from 'styled-theming'
 
-// import {
-//   border,
-//   color } from '../../../theme'
+import { color } from '../../../theme'
 
-const backgroundColor = theme.variants('mode', 'variant', {
-  default: { light: 'gray', dark: 'darkgray' },
-  primary: { light: 'blue', dark: 'darkblue' },
-  success: { light: 'green', dark: 'darkgreen' },
-  warning: { light: 'orange', dark: 'darkorange' }
+const backgroundColor = theme.variants('mode', 'type', {
+  primary: { light: color.primary, dark: 'darkblue' },
+  secondary: { light: 'green', dark: 'darkgreen' },
+  danger: { light: 'orange', dark: 'darkorange' }
 })
 
 const StyledButton = styled.button`
@@ -31,7 +28,7 @@ const StyledButton = styled.button`
   box-sizing: border-box;
   transition: background-color 250ms ease-out, color 250ms ease-out, border-color 250ms ease-out;
   background-color: ${backgroundColor};
-  color: #ccc;
+  color: ${color.white};
 
   &:hover,
   &:focus,
@@ -45,12 +42,12 @@ const StyledButton = styled.button`
   }
 `
 
-const Button = ({ children, onClick, onMouseDown, onTouchStart, variant }) => (
+const Button = ({ children, onClick, onMouseDown, onTouchStart, type }) => (
   <StyledButton
     onClick={onClick}
     onMouseDown={onMouseDown}
     onTouchStart={onTouchStart}
-    variant={variant}
+    type={type}
   >
     {children}
   </StyledButton>
@@ -61,11 +58,11 @@ Button.propTypes = {
   onClick: PropTypes.func,
   onMouseDown: PropTypes.func,
   onTouchStart: PropTypes.func,
-  variant: PropTypes.oneOf(['default', 'primary', 'success', 'warning'])
+  type: PropTypes.oneOf(['primary', 'secondary', 'danger'])
 }
 
 Button.defaultProps = {
-  variant: 'default'
+  type: 'primary'
 }
 
 export default Button

@@ -13,7 +13,7 @@ exports[`it works 1`] = `
   align-items: center;
   white-space: nowrap;
   font-size: 16px;
-  border: 0.0625em solid #bec4c8;
+  border: 0.0625em solid #ccc;
   height: 2.5em;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -29,15 +29,14 @@ exports[`it works 1`] = `
   box-sizing: border-box;
   -webkit-transition: background-color 250ms ease-out,color 250ms ease-out,border-color 250ms ease-out;
   transition: background-color 250ms ease-out,color 250ms ease-out,border-color 250ms ease-out;
-  background-color: #ffffff;
-  color: #bec4c8;
+  color: #ffffff;
 }
 
 .c0:hover,
 .c0:focus,
 .c0:active {
-  background-color: #f8f9f9;
-  border-color: #97a1a7;
+  background-color: #000;
+  border-color: #ccc;
 }
 
 .c0:focus {
@@ -49,6 +48,7 @@ exports[`it works 1`] = `
   onClick={undefined}
   onMouseDown={undefined}
   onTouchStart={undefined}
+  type="primary"
 >
   Hello World
 </button>

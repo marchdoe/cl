@@ -13,15 +13,15 @@ stories.addDecorator(withKnobs)
 stories.add('with a button',
   withInfo('')(() => (
     <div>
-      <Button disabled={boolean('Disabled', false)} onClick={action('onClick')}>
-        {text('Label', 'Hello Button')}
-      </Button>
-
       <Button type='primary' disabled={boolean('Disabled', false)} onClick={action('onClick')}>
         {text('Label', 'Hello Button')}
       </Button>
 
-      <Button type='primary' disabled={boolean('Disabled', false)} onClick={action('onClick')}>
+      <Button type='secondary' disabled={boolean('Disabled', false)} onClick={action('onClick')}>
+        {text('Label', 'Hello Button')}
+      </Button>
+
+      <Button type='danger' disabled={boolean('Disabled', false)} onClick={action('onClick')}>
         {text('Label', 'Hello Button')}
       </Button>
     </div>

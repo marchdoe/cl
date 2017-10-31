@@ -1,24 +1,34 @@
 export const border = {
-  radius: '3px'
+  radius: '3px',
+  largeRadius: '10px'
 }
 
 export const color = {
+  primary: '#0088cc',
+  secondary: '#77c241',
   white: '#ffffff',
-  gray0: '#f8f9f9',
-  gray1: '#ebedee',
-  gray2: '#dee1e3',
-  gray3: '#cfd3d6',
-  gray4: '#bec4c8',
-  gray5: '#acb4b9',
-  gray6: '#97a1a7',
+  gray0: '#f1f2f6',
+  gray1: '#dfe4ea',
+  gray2: '#ced7e0',
+  gray3: '#a4b0be',
+  gray4: '#747d8c',
+  gray5: '#57606f',
+  gray6: '#2f3541',
   gray7: '#7f8a93',
   gray8: '#5f6e78',
   gray9: '#374047',
-  black: '#000000'
+  black: '#000000',
+  lightBlack: '#0d1321',
+  success: '#7aed9f',
+  info: '#6990eb',
+  warning: '#eccc69',
+  danger: '#ff486c'
 }
 
-// export const font = {
-// }
+export const font = {
+  primaryFont: '',
+  secondaryFont: ''
+}
 
 // export const size = {
 //   xl: 1170,
@@ -29,7 +39,7 @@ export const color = {
 
 export default {
   border,
-  color
-  // font,
+  color,
+  font
   // size
 }

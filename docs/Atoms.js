@@ -6,6 +6,8 @@ import Aside from './Aside'
 import Colors from './Colors'
 import Article from './Article'
 
+import Button from '../src/components/atoms/Button'
+
 const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   transition: all 0.3s ease 0s;
@@ -26,7 +28,7 @@ const Atoms = ({match}) => {
 
       <Route  key='route' path={`${match.path}/:name`} render= {({match}) =>(
         <Article>
-          <Colors />
+          <Button> example Button </Button>
         </Article>
       )}/>
     ]

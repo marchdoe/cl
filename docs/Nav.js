@@ -31,8 +31,8 @@ const StyledNavLink = styled(NavLink)`
   transition: all 0.3s ease 0s;
 
   &.is-selected {
-    background-color: ${color.primaryColor};
-    border: 1px solid ${color.primaryColor};
+    background-color: ${color.primary};
+    border: 1px solid ${color.primary};
   }
 `
 

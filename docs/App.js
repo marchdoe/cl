@@ -17,8 +17,6 @@ import Main from './Main'
 import Nav from './Nav'
 import Footer from './Footer'
 
-
-
 injectGlobal`
   * {
     box-sizing: border-box;
@@ -55,14 +53,6 @@ const App = props => {
               <Route path="/organisms" component={Organisms}/>
               <Route component={NotFound} />
             </Switch>
-
-            {/* this should be populated by the nav item you choose */}
-
-
-            {/* this should be populated by the secondary-nav item you choose */}
-            {/* <Article>
-              <Colors />
-            </Article> */}
 
           </Main>
 

@@ -15,10 +15,11 @@ const textColor = theme.variants('mode', 'color', {
   secondary: { light: color.blue, dark: 'darkblue' }
 })
 
-const Article = styled.aside`
+const Article = styled.article`
   color: ${textColor};
   padding: 0 2rem;
   background-color: ${layoutColor};
+  width: 100%;
 `
 
 Article.propTypes = {

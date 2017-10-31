@@ -3,6 +3,7 @@ import { NavLink, Route } from 'react-router-dom'
 
 import Aside from './Aside'
 import Colors from './Colors'
+import Article from './Article'
 
 const Atoms = ({match}) => {
   return (
@@ -14,9 +15,9 @@ const Atoms = ({match}) => {
       </Aside>,
 
       <Route  key='route' path={`${match.path}/:name`} render= {({match}) =>(
-        <div>
+        <Article>
           <Colors />
-        </div>
+        </Article>
       )}/>
     ]
   )
